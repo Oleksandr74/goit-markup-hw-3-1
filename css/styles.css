@@ -4,63 +4,6 @@
   --basic-color: #ffffff;
 }
 
-/*NORMALIZE*/
-a {
-  display: inline-block;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  html {
-    box-sizing: border-box;
-  }
-
-  *,
-  *::after,
-  *::before {
-    box-sizing: inherit;
-  }
-
-  /*reset*/
-
-  /* Стили для обнуления верхних отступов у элементов */
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    margin-top: 0;
-  }
-
-  /* Класс для обнуления базовых свойств у списков (ul) */
-  .list {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-  }
-
-  /* Класс для обнуления базовых свойств у ссылок */
-  .link {
-    text-decoration: none;
-    color: inherit;
-  }
-
-  /* Свойства для корректного отображения картинок */
-  img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
-
-  /* Свойства для обнуления курсива у address */
-  address {
-    font-style: normal;
-  }
-}
 /*BASE*/
 body {
   font-family: 'Roboto', sans-serif;
@@ -69,9 +12,68 @@ body {
   font-size: 14px;
   background-color: #ffffff;
   width: 1600px;
+  border: #2f303a;
 }
 
-/*IU*/
+/*NORMALIZE*/
+a {
+  display: inline-block;
+}
+
+
+
+/* RESET*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+/* Стили для обнуления верхних отступов у элементов */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+/* Класс для обнуления базовых свойств у списков (ul) */
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Класс для обнуления базовых свойств у ссылок */
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Свойства для корректного отображения картинок */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Свойства для обнуления курсива у address */
+address {
+  font-style: normal;
+}
+
+
+
+/*HEADER*/
+
 .header-webstudio {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -95,6 +97,22 @@ span .header-studio {
   font-family: 'Raleway', sans-serif;
   font-weight: 700px;
 }
+.container-header {
+  justify-content: space-between;
+  display: flex;
+  align-items: baseline;
+}
+
+.inlineblock {
+  display: inline-block;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 32px;
+  margin-bottom: 32px;}
+
+  .header-portfolio-form {
+  margin-right: 215px;
+}
 
 .contacts-mail {
   font-weight: 500;
@@ -115,13 +133,59 @@ span .header-studio {
   text-decoration: none;
   color: #757575;
 }
-
 .contacts-tel:hover {
   color: #188ce8;
 }
 .contacts-tel:focus {
   color: #188ce8;
 }
+.marker {
+  list-style: none;
+}
+
+/*MAIN*/
+.hero {
+  background-color: #2f303a;
+  height: 600px;
+}
+
+.hero-title {
+  color: var(--basic-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  margin-left: 452px;
+  margin-right: 452px;
+  padding-top: 200px;
+  margin-top: 0px;
+}
+
+/* buttons*/
+.button {
+  background-color: #2196f3;
+  /*/padding: 10px 32px 10px 32px;*/
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  /*box-shadow: 0px 4px 4px rgba(0, g0reen, bl0ue, 0.15);*/
+  text-align: center;
+}
+
+.button-position {
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #188ce8;
+.name-button {
+  color: var(--basic-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+}
+
 
 .footer-webstudio {
   font-family: 'Raleway', sans-serif;
@@ -134,9 +198,7 @@ span .footer-studio {
   font-weight: 700px;
 }
 
-.marker {
-  list-style: none;
-}
+
 
 .link {
   color: var(--brand-color);
@@ -170,30 +232,9 @@ span .footer-studio {
   border-color: #ffffff;
 }
 
-.hero {
-  background-color: #2f303a;
-  height: 600px;
-}
 
-.hero-title {
-  color: var(--basic-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-align: center;
-  margin-left: 452px;
-  margin-right: 452px;
-  padding-top: 200px;
-  margin-top: 0px;
-}
 
-.name-button {
-  color: var(--basic-color);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-}
+
 
 .team {
   font-weight: 500;
@@ -224,22 +265,7 @@ span .footer-studio {
   text-align: center;
 }
 
-/* buttons*/
-.button {
-  background-color: #2196f3;
-  width: 200px;
-  height: 50px;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, g0reen, bl0ue, 0.15);
-  text-align: center;
-}
 
-.button-position {
-  text-align: center;
-}
-
-.button:hover {
-  background-color: #188ce8;
 }
 
 .cards-portfolio {
@@ -350,19 +376,8 @@ span .footer-studio {
   margin-right: 15px;
 }
 
-.container-header {
-  justify-content: space-between;
-  display: flex;
-  align-items: baseline;
-}
 
-.inlineblock {
-  display: inline-block;
-  margin-left: 25px;
-  margin-right: 25px;
-  margin-top: 32px;
-  margin-bottom: 32px;
-}
+
 
 .portfolio-container-button {
   justify-content: center;
@@ -435,10 +450,4 @@ span .footer-studio {
   margin-left: 24px;
 }
 
-.header-portfolio-form {
-  margin-right: 215px;
-}
 
-body {
-  border: #2f303a;
-}
