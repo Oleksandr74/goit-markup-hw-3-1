@@ -5,42 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!--normalize-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/1.1.0/normalize.min.css" integrity="sha512-l0ofWk9slhBYzFo/8jFXBHNcPIZ4CekhhC4mtj9EZ47ed+Gdt4txfOF2+VAH/YdxFFf1ODtTuaGXZR6ygHsa7w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
+
     <link rel="stylesheet" href="css/styles.css" />
     <title><DZ#3></title>
   </head>
   <body>
     <!--HEADER-->
-    <header>
+    <header class="header">
       <div class="container container-header">
+        <nav class="nav-header">
         <a class="header-webstudio" href="./index.html"
-          >Web<span class="header-studio">Studio</span></a
-        >
-        <ul class="marker">
-          <li class="inlineblock"><a class="link current" href="#">Студия</a></li>
-          <li class="inlineblock"><a class="link" href="./portfolio.html">Портфолио</a></li>
-          <li class="inlineblock"><a class="link" href="#">Контакты</a></li>
+          >Web<span class="header-studio">Studio</span></a>
+          
+        <ul class="nav-links list">
+          <li class="nav-links-text"><a class="link current" href="#">Студия</a></li>
+          <li class="nav-links-text"><a class="link" href="./portfolio.html">Портфолио</a></li>
+          <li class="nav-links-text"><a class="link" href="#">Контакты</a></li>
         </ul>
 
-        <ul class="marker">
-          <li class="inlineblock">
+        <ul class="nav-contakts list">
+          <li class="nav-links-text">
             <a class="contacts-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li class="inlineblock">
+          <li class="nav-links-text">
             <a class="contacts-tel" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
+        </nav>
       </div>
     </header>
     <!--MAIN-->
     <main>
       <!--hero-->
-      <section class="hero">
+      <section class="hero section">
         <div class="container">
         <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
         <div class="button-position">
@@ -50,7 +56,7 @@
       </section>
 
       <!--our mission--text-->
-      <section>
+      <section class="section">
         <div class="container">
         <h2 class="visually-hidden">Преймущества и особенности</h2>
         <ul class="marker title-contents-form">
@@ -82,43 +88,43 @@
         </div>
       </section>
       <!-- our mission--photo-->
-      <section>
-        <div>
+      <section class="section work">
+        <div class="container">
         <h2 class="title-text">Чем мы занимаемся</h2>
         <ul class="marker our-works">
-          <li class="our-works-form">
+          <li>
             <img src="./images/img_1.jpg" alt="фото-1" width="370" height="294" />
           </li>
-          <li class="our-works-form">
+          <li>
             <img src="./images/img_2.jpg" alt="фото-2" width="370" height="294" />
           </li>
-          <li class="our-works-form">
+          <li>
             <img src="./images/img_3.jpg" alt="фото-3" width="370" height="294" />
           </li>
         </ul>
       </section>
         </div>
       <!--our team-->
-      <section>
-        <div class="view">
+      <section class="section">
+        <div class="container">
           <h2 class="title-text">Наша команда</h2>
           <ul class="marker our-team">
-            <li>
+            <li class="our-team-card">
               <img src="./images/photo_ID.jpg" alt="Product Designer" width="270" height="260" />
               <h3 class="team">Игорь Демьяненко</h3>
               <p class="team-position">Product Designer</p>
-            </li>
-            <li>
+            </li class="our-team-card">
+            <li class="our-team-card">
               <img src="./images/photo_OP.jpg" alt="Frontend Developer" width="270" height="260" />
               <h3 class="team">Ольга Репина</h3>
               <p class="team-position">Frontend Developer</p>
             </li>
-            <li>
+            <li class="our-team-card">
               <img src="./images/photo_NT.jpg" alt="Marketing" width="270" height="260" />
               <h3 class="team">Николай Тарасов</h3>
               <p class="team-position">Marketing</p>
             </li>
-            <li>
+            <li class="our-team-card">
               <img src="./images/photo_ME.jpg" alt="UI Designer" width="270" height="260" />
               <h3 class="team">Михаил Ермаков</h3>
               <p class="team-position">UI Designer</p>
@@ -128,8 +134,8 @@
       </section>
     </main>
     <!--FOOTER-->
-    <footer>
-      <section class="foot">
+    <footer class="foot">
+     
         <div class="container">
         <a class="footer-webstudio" href="./index.html">Web<span class="studio">Studio</span></a>
 
@@ -153,7 +159,7 @@
           </ul>
         </address>
         </div>
-      </section>
+      
     </footer>
   </body>
 </html>

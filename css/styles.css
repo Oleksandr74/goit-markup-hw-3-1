@@ -2,6 +2,7 @@
   --brand-color: #212121;
   --accent-color: #2196f3;
   --basic-color: #ffffff;
+  --fon-color: #2f303a;
 }
 
 /*NORMALIZE*/
@@ -65,11 +66,22 @@ body {
   letter-spacing: 0.03em;
   font-size: 14px;
   background-color: #ffffff;
-  width: 1600px;
-  border: #2f303a;
 }
 
 /*HEADER*/
+section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.nav-header {
+  display: flex;
+}
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 
 .container {
   width: 1200px;
@@ -78,11 +90,33 @@ body {
   padding-right: 15px;
 }
 
+.nav-links-text:not(:last-child) {
+  margin-right: 50px;
+}
+
 .container-header {
   justify-content: space-between;
-  display: flex;
   align-items: baseline;
 }
+.nav-links {
+  display: flex;
+  margin: 0;
+  margin-left: 93px;
+  padding: 0;
+  align-items: center;
+}
+
+.nav-contakts {
+  display: flex;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  align-items: center;
+}
+.marker {
+  list-style: none;
+}
+
 /*HEADER-logo*/
 
 .header-webstudio {
@@ -126,6 +160,7 @@ span .header-studio {
   font-weight: 500;
   line-height: 1.2;
   text-decoration: none;
+  color: var(--accent-color);
 }
 
 .contacts-mail:hover {
@@ -152,8 +187,9 @@ span .header-studio {
 /*MAIN*/
 /*hero*/
 .hero {
-  background-color: #2f303a;
-  height: 600px;
+  background-color: var(--fon-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -165,7 +201,7 @@ span .header-studio {
   text-align: center;
   margin-left: 252px;
   margin-right: 252px;
-  padding-top: 200px;
+
   margin-top: 0px;
 }
 
@@ -186,74 +222,57 @@ span .header-studio {
   overflow: hidden;
 }
 
-.marker {
-  list-style: none;
-}
-
 .title-contents {
   font-weight: 700;
   line-height: 1.14;
-  letter-spacing: 00.03em;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-top: 94px;
+  font-size: 14px;
+  margin: 0px;
+  margin-bottom: 10px;
 }
 
 .title-contents-form {
   display: flex;
   justify-content: space-between;
   padding: 0px;
-  margin-top: 0px;
+  margin: 0px;
 }
 .content {
   line-height: 1.67;
   text-decoration: none;
   width: 270px;
+  margin-bottom: 0px;
 }
 
-.inlineblock {
-  display: inline-block;
-  margin-left: 25px;
-  margin-right: 25px;
-  margin-top: 32px;
-  margin-bottom: 32px;
+.work {
+  padding-top: 0px;
 }
 
 .our-works {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-left: 200px;
-  margin-right: 200px;
-  margin-top: 0px;
-  padding: 0px 0px 94px 0px;
-}
-
-.our-works-form {
-  margin-left: 15px;
-  margin-right: 15px;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
 }
 
 .title-text {
-  padding-top: 94px;
-  padding-bottom: 50px;
-  margin: 0;
+  margin-bottom: 50px;
   text-align: center;
-}
-
-.view {
-  background: #f5f4fa;
-  height: 648px;
 }
 
 .our-team {
   display: flex;
-  flex-direction: row;
+
   justify-content: space-between;
-  margin-top: 0px;
+  margin: 0px;
   padding: 0px;
-  margin-left: 215px;
-  margin-right: 215px;
-  margin-bottom: 94px;
+}
+
+.our-team-card {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-position {
   font-size: 16px;
@@ -261,6 +280,7 @@ span .header-studio {
   letter-spacing: 0.03ex;
   color: #757575;
   text-align: center;
+  margin-bottom: 30px;
 }
 .team {
   font-weight: 500;
@@ -269,7 +289,8 @@ span .header-studio {
   letter-spacing: 0.03ex;
   color: #212121;
   text-align: center;
-  padding-top: 30px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 /*FOOTER*/
@@ -286,8 +307,9 @@ span .footer-studio {
 }
 
 .foot {
-  background-color: #2f303a;
-  height: 252px;
+  background-color: var(--fon-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .contact-footer {
@@ -297,6 +319,10 @@ span .footer-studio {
   text-decoration: none;
   color: rgba(225, 225, 225, 0.6);
 }
+.contact-footer-form:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .contact-footer:hover {
   color: #2196f3;
 }
@@ -321,8 +347,6 @@ span .footer-studio {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.17;
-
-  margin-top: 60px;
   margin-bottom: 20px;
 }
 /*HEADER PORTFOLIO*/
@@ -404,24 +428,26 @@ span .footer-studio {
 .portfolio-container-button {
   justify-content: center;
   display: flex;
-  margin-bottom: 42px;
-  margin-top: 94px;
-  padding: 0px;
+
 }
 
 .our-project {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-right: 200px;
-  margin-left: 200px;
-  margin-top: 36px;
+  justify-content: space-between;
   padding: 0;
+  gap: 30px;
+  
 }
 
 .our-project-card {
-  padding: 15px;
-  margin-bottom: 15px;
+  background: #ffffff;
+ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  border: 1px solid #eeeeee; 
+ flex-basis: calc((100% - 60px) / 3);
+  
 }
 
 .contacts {
@@ -442,11 +468,18 @@ span .footer-studio {
 /*MAIN PORTFOLIO*/
 
 .contact-footer-form {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .contact-footer-list {
+  display: block;
+
   padding: 0px;
-  margin-bottom: 60px;
+  margin: 0px;
 }
+
+.section-portfolio-button {padding-bottom: 50px;}
+
+.section-portfolio-project { padding-top: 0px;}
+

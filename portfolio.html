@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <!--normalize-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/1.1.0/normalize.min.css" integrity="sha512-l0ofWk9slhBYzFo/8jFXBHNcPIZ4CekhhC4mtj9EZ47ed+Gdt4txfOF2+VAH/YdxFFf1ODtTuaGXZR6ygHsa7w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,35 +17,37 @@
     
     <title><DZ#3></title>
 
-
-
 </head>
 <body>
     <!--HEADER PORTFOLIO-->
-    <header>
-        <section class="header">
-        <div class="container container-header">
-    
-            <a class="header-webstudio" href="./index.html">Web<span class="header-studio">Studio</span></a>
-    
-            <ul class="marker">
-                <li class="inlineblock"><a class="link" href="./index.html">Студия</a></li>
-                <li class="inlineblock"><a class="link current" href="#">Портфолио</a></li>
-                <li class="inlineblock"><a class="link" href="#">Контакты</a></li>
-            </ul>
-        
-            <ul class="marker header-portfolio-form">
-                <li class="inlineblock"><a class="contacts-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="inlineblock"><a class="contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
-        </div>
-    </section>
+     <header class="header">
+      <div class="container container-header">
+        <nav class="nav-header">
+        <a class="header-webstudio" href="./index.html"
+          >Web<span class="header-studio">Studio</span></a>
+          
+        <ul class="nav-links list">
+          <li class="nav-links-text"><a class="link" href="./index.html">Студия</a></li>
+          <li class="nav-links-text"><a class="link current" href="#">Портфолио</a></li>
+          <li class="nav-links-text"><a class="link" href="#">Контакты</a></li>
+        </ul>
+
+        <ul class="nav-contakts list">
+          <li class="nav-links-text">
+            <a class="contacts-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="nav-links-text">
+            <a class="contacts-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+        </ul>
+        </nav>
+      </div>
     </header>
     <!--MAIN PORTFOLIO-->
     <main>
         <!--button portfolio-->
-        <section>
-            <div class="container">
+        <section class="section">
+            <div class="container section-portfolio-button">
                 <h1 class="visually-hidden">Портфолио</h1>
                 <ul  class="marker portfolio-container-button">
                     <li><button class="cards-portfolio current-portfolio" type="button">все</button></li>
@@ -55,11 +58,12 @@
                  </ul>
              </div>
             
-        </section>
+        
         <!--our-project-->
-        <section>
+        
+            <div class="container section-portfolio-project">
             <h2 class="visually-hidden">Реализованные проекты</h2>
-            <ul class="marker our-project">
+            <ul class="marker our-project list">
                 <li class="our-project-card">
                     <img src="./images/portfolio_1.jpg" alt="портфолио-1" width="370" height="294" />
                     <h3 class="name-project">Технокряк</h3>
@@ -106,17 +110,14 @@
                     <p class="job">Приложение</p>
                 </li>
             </ul>
+            </div>
         </section>
     </main>
     <!--FOOTER PORTFOLIO-->
     <footer class="foot">
-        <section>
-            <div class="container">
-    
+        <div class="container">
         <a class="footer-webstudio" href="./index.html">Web<span class="studio">Studio</span></a>
-    
-    <address>
-      
+        <address>
             <ul class="marker contact-footer-list">
                 <li class="contact-footer-form"><a class="contact-adress" href="https://goo.gl/maps/piqngm7oDQpEDh6u6" target="_blank"
                         rel="noopener nofollow noreferrer">г.
@@ -124,9 +125,8 @@
                 <li class="contact-footer-form"><a class="contact-footer" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                 <li class="contact-footer-form"><a class="contact-footer" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
-     </address>
-     </div>
-    </section>
+        </address>
+        </div>
     </footer>
 </body>
 </html>
