@@ -497,14 +497,21 @@ font-weight: 700;
   color: var(--accent-color);
 }
 
-.job {
+.contact-footer-list {
+  display: block;
+
+  padding: 0px;
+  margin: 0px;
+}
+
+/*.job {
  padding-left: 24px;
  padding-bottom: 20px;
  margin-bottom: 0px;
 font-weight: 400;
 font-size: 16px;
 line-height: 30px;
-color: var(--letter-color);
+color: var(--letter-color);}*/
 
 
 /*MAIN PORTFOLIO*/
@@ -512,13 +519,6 @@ color: var(--letter-color);
 .contact-footer-form {
   margin-top: 0px;
   margin-bottom: 0px;
-}
-
-.contact-footer-list {
-  display: block;
-
-  padding: 0px;
-  margin: 0px;
 }
 
 .section-portfolio-button {
