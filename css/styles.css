@@ -308,8 +308,9 @@ span .header-studio {
   letter-spacing: 0.03ex;
   color: var(--brand-color);
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  margin: 0px;
 }
 
 /*FOOTER*/
