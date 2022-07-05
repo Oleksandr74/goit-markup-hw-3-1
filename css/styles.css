@@ -142,13 +142,11 @@ section {
   text-decoration: none;
 }
 .link:hover {
-  color:var(--accent-color);
+  color: var(--accent-color);
 }
 .link:focus {
   color: var(--accent-color);
 }
-
-
 
 span .header-studio {
   font-family: 'Raleway', sans-serif;
@@ -233,16 +231,14 @@ span .header-studio {
   width: 270px;
 }
 
-.title-contents-size:not(:last-child)
-{margin-right: 30px;}
+.title-contents-size:not(:last-child) {
+  margin-right: 30px;
+}
 
 .title-contents-form {
   display: flex;
   justify-content: space-between;
-
 }
-
-
 
 .content {
   line-height: 1.71;
@@ -271,11 +267,11 @@ span .header-studio {
   text-align: center;
   font-style: normal;
 
-font-size: 36px;
-line-height: 1.17;
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--brand-color);
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--brand-color);
 }
 
 .our-team {
@@ -303,7 +299,7 @@ color: var(--brand-color);
   text-align: center;
   padding-bottom: 30px;
   margin: 0px;
-  }
+}
 
 .team {
   font-weight: 500;
@@ -358,7 +354,7 @@ span .footer-studio {
 }
 
 .footer-webstudio {
-  color:var(--accent-color);
+  color: var(--accent-color);
 }
 .footer-webstudio .studio {
   color: var(--basic-color);
@@ -390,9 +386,8 @@ span .footer-studio {
 
 .button-position {
   text-align: center;
-}*/
-
-.button:hover {
+}
+*/ .button:hover {
   background-color: #188ce8;
 }
 
@@ -409,8 +404,8 @@ span .footer-studio {
   color: var(--basic-color);
   border-color: var(--basic-color);
 
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-   0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .name_button-port {
   color: var(--black-color);
@@ -442,10 +437,9 @@ span .footer-studio {
   border-radius: 4px;
   font-family: inherit;
   background: var(--background-team-color);
- 
+
   cursor: pointer;
   border: var(--letter-color);
- 
 }
 .cards-portfolio:hover {
   background-color: var(--accent-color);
@@ -454,10 +448,10 @@ span .footer-studio {
 .name-project {
   font-size: 18px;
   line-height: 2;
-padding-top: 20px;
-margin-bottom: 0px;
-padding-left: 24px;
-font-weight: 700;
+  padding-top: 20px;
+  margin-bottom: 0px;
+  padding-left: 24px;
+  font-weight: 700;
 }
 
 .portfolio-container-button {
@@ -470,7 +464,9 @@ font-weight: 700;
   margin-right: 8px;
 }
 
-.cards-portfolio:not(:last-child) {margin-right: 8px;}
+.cards-portfolio:not(:last-child) {
+  margin-right: 8px;
+}
 
 .our-project {
   display: flex;
@@ -481,8 +477,8 @@ font-weight: 700;
 }
 
 .our-project-card {
-  background:var(--basic-color);
-   border: 1px solid #eeeeee;
+  background: var(--basic-color);
+  border: 1px solid #eeeeee;
   flex-basis: calc((100% - 60px) / 3);
 }
 
@@ -512,7 +508,6 @@ font-weight: 400;
 font-size: 16px;
 line-height: 30px;
 color: var(--letter-color);}*/
-
 
 /*MAIN PORTFOLIO*/
 
